@@ -1,8 +1,8 @@
 pipeline {
 
   environment {
-    frontendDockerImageName = "sample-frontend:v1"
-    backendDockerImageName = "sample-backend:v1"
+    frontendDockerImageName = "dharahas1016/sample-frontend:v1"
+    backendDockerImageName = "dharahas1016/sample-backend:v1"
     dockerImage = ""
     registryCredential = 'dockerhublogin'
   }
@@ -13,7 +13,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/Dharahas1016/devops-challenge1.git'
+        git 'https://github.com/Dharahas1016/devops-challenge2.git'
       }
     }
 
